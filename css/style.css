@@ -128,6 +128,9 @@ section {
   background: #2196f3;
   border-radius: 2px;
   opacity: 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-studios:hover::after {
   opacity: 1;
@@ -146,6 +149,9 @@ section {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-portfolios:hover,
 .header-nav-contact:hover {
@@ -160,10 +166,16 @@ section {
   color: #757575;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-tel:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-mails {
   text-decoration: none;
@@ -175,10 +187,16 @@ section {
   color: #2196f3;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-mails:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .etel {
   width: 12px;
@@ -488,6 +506,9 @@ address {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -533,6 +554,9 @@ address {
   height: 44px;
   color: #ffffff;
   border-radius: 50%;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .instag,
 .twitter1,
@@ -541,6 +565,9 @@ address {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon:hover,
 .footer-icon:focus {
@@ -560,7 +587,8 @@ address {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
@@ -628,6 +656,9 @@ header {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-studio:hover {
@@ -644,11 +675,26 @@ header {
 
 .header-nav-portfolio,
 .header-nav-contact {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--#212121);
+}
+.header-nav-portfolio::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-portfolio:hover,
@@ -662,6 +708,35 @@ header {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+.progect-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 101%;
+
+  background: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms;
+}
+.overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.progect-link:hover .overlay {
+  transform: translateY(0%);
 }
 
 .about-conteiner {
@@ -715,6 +790,9 @@ header {
   cursor: pointer;
   background-color: #f5f4fa;
   justify-content: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-about-line:hover,
 .main-about-line:focus {
