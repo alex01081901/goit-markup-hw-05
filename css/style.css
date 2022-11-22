@@ -673,6 +673,7 @@ header {
 }
 
 .header-nav-portfolio {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -733,7 +734,7 @@ header {
   background: rgba(33, 150, 243, 0.9);
   transition: transform 250ms;
 }
-.overlay-text {
+.overlay-texts {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -741,6 +742,7 @@ header {
   color: #ffffff;
   padding-left: 24px;
   padding-right: 24px;
+  text-align: center;
 }
 .progect-link:hover .overlay {
   transform: translateY(0%);
@@ -797,7 +799,7 @@ header {
   cursor: pointer;
   background-color: #f5f4fa;
   justify-content: center;
-  transition-property: color;
+  transition-property: color, var(--background-color), box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -807,7 +809,7 @@ header {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-property: color;
+  transition-property: color, var(--background-color), box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
