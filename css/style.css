@@ -127,14 +127,12 @@ section {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-  opacity: 0;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav-studios:hover::after {
-  opacity: 1;
-}
+
 .header-nav-portfolios {
   font-weight: 500;
   font-size: 14px;
@@ -580,6 +578,57 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.text-social {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.enter {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.enter:hover,
+.enter:focus {
+  border: 2px solid var(--accent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-email {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-left: 28px;
+  padding-bottom: 10px;
+}
+
+.button-email::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+}
 /* modal window*/
 
 .backgrop {
@@ -600,8 +649,8 @@ address {
 .modal {
   position: absolute;
   top: 50%;
-  left: 30%;
-  transform: translate(-50% -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -689,6 +738,7 @@ header {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--#212121);
+  padding: 32px 0;
 }
 .header-nav-portfolio::after {
   content: '';
