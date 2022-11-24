@@ -379,10 +379,10 @@
       <div class="social-email">
         <p class="text-social">Підпишіться на розсилку</p>
         <form action="">
-          <input class="enter" type="text" name="email" placeholder="">
+          <input class="enter" type="text" name="email" placeholder="E-mail">
           <button class="button-email">Підписатися
             <svg class="" width="28" height="28">
-              <use href="./icon/icon send.svg"></use>
+              <use href="./symbol-defs.svg#icon-icon-send"></use>
             </svg>
           </button>
         </form>
@@ -396,6 +396,25 @@
           <use href="./symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
+      <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+      <form class="modal-social" action="">
+        <label for="name">Ім'я</label>
+        <input type="text" name="name" id="name">
+
+        <label for="tel">Tелефон</label>
+        <input type="text" name="tel" id="tel">
+
+        <label for="mail">Пошта</label>
+        <input type="text" name="mail" id="mail">
+
+        <label for="coment">Коментар</label>
+        <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+
+        <input type="checkbox" name="consent" id="consent">
+        <label for="">Погоджуюся з розсилкою та приймаю Умови договору</label>
+
+        <button type="submit">Відправити</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
