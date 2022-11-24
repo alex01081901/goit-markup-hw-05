@@ -688,8 +688,8 @@ address {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.modal-social {
-  display: block;
+.form-field {
+  display: flex;
 }
 /*page2*/
 header {
